@@ -26,7 +26,7 @@ Com base no código:
 ## Como Executar
 1. Clone o repositório ou crie uma pasta `tokuplus` localmente.
 2. Copie o conteúdo do `index.html` para um arquivo com esse nome na raiz.
-3. Crie a pasta `/public/css/` e adicione o arquivo `new.css` com o conteúdo fornecido.
+3. Crie a pasta `/public/css/` e adicione o arquivo `style.css` com o conteúdo fornecido.
 4. Crie a pasta `/public/imgs/` e adicione todas as imagens mencionadas (ex.: `logo.png`, `01banner.jpg`, etc.).
 5. Abra o `index.html` em um navegador web (recomenda-se usar um servidor local como Live Server no VS Code para melhor desempenho).
 

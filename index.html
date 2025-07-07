@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TokuPlus</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/public/css/style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#home">
+                    <img src="/public/imgs/logo.png" alt="logo toku+" class="navbar-brand-img">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#about">Sobre</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#releases">Lançamentos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#services">Serviços</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <section id="carouselSection" class="container mt-5">
+        <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="/public/imgs/01banner.jpg" class="d-block w-100" alt="Lançamento 1" onerror="this.onerror=null; this.src='https://via.placeholder.com/1200x300?text=Imagem+Indisponível';">
+                    <div class="carousel-caption d-none d-md-block bg-dark text-white p-2 rounded">
+                        <h5>Kamen Rider Zero-One</h5>
+                        <p>Domine a tecnologia com o poder dos HumaGears!</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="/public/imgs/boonBoomger.jpg" class="d-block w-100" alt="Lançamento 2" onerror="this.onerror=null; this.src='https://via.placeholder.com/1200x300?text=Imagem+Indisponível';">
+                    <div class="carousel-caption d-none d-md-block bg-dark text-white p-2 rounded">
+                        <h5>Super Sentai BoonBoomger</h5>
+                        <p>Acelerando a justiça com trens velozes!</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="/public/imgs/ultraZ.jpg" class="d-block w-100" alt="Lançamento 3" onerror="this.onerror=null; this.src='https://via.placeholder.com/1200x300?text=Imagem+Indisponível';">
+                    <div class="carousel-caption d-none d-md-block bg-dark text-white p-2 rounded">
+                        <h5>Ultraman Z</h5>
+                        <p>Defenda a Terra com aliados estelares!</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+    <section id="about" class="container mt-5">
+        <div class="row align-items-center">
+            <div class="col-12 col-md-6">
+                <div class="text">
+                    <h1 class="display-4 text-primary">Por que escolher a TokuPlus?</h1>
+                    <p class="lead text-light">Viva a emoção dos tokusatsu com qualidade HD, legendas impecáveis e acesso a raridades como Kamen Rider e Ultraman. Atualizações semanais para os fãs de heróis transformados!</p>
+                    <a href="#services" class="btn btn-primary btn-lg mt-3">Assine Agora</a>
+                </div>
+            </div>
+            <div class="col-12 col-md-6">
+                <img src="/public/imgs/sec1-img.png" alt="foto kuuga alta qualidade" class="img-fluid rounded shadow" onerror="this.onerror=null; this.src='https://via.placeholder.com/600x400?text=Imagem+Indisponível';">
+            </div>
+        </div>
+    </section>
+    <section id="releases" class="container mt-5">
+        <h2 class="section-title text-primary">Lançamentos Imperdíveis</h2>
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+                <div class="card h-100 border-0 shadow-sm bg-secondary">
+                    <img src="/public/imgs/01poster.png" class="card-img-top" alt="Card 1" onerror="this.onerror=null; this.src='https://via.placeholder.com/200x200?text=Imagem+Indisponível';">
+                    <div class="card-body">
+                        <h5 class="card-title text-light">Kamen Rider Zero-One</h5>
+                        <p class="card-text text-light">Transforme-se com tecnologia avançada.</p>
+                        <a class="btn btn-primary mt-3" data-bs-toggle="modal" data-bs-target="#zeroOneModal">Mais Info</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100 border-0 shadow-sm bg-secondary">
+                    <div class="card-img-top placeholder-glow">
+                        <span class="placeholder col-12" style="height: 200px;"></span>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            <span class="placeholder placeholder-glow col-8" style="height: 1.5rem;"></span>
+                        </h5>
+                        <p class="card-text">
+                            <span class="placeholder placeholder-glow col-10" style="height: 1rem;"></span>
+                        </p>
+                        <a class="placeholder placeholder-glow col-3" data-bs-toggle="modal" data-bs-target="#kyoryugerModal">Mais Info</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100 border-0 shadow-sm bg-secondary">
+                    <img src="/public/imgs/posterUltramanZ.png" class="card-img-top" alt="Card 3" onerror="this.onerror=null; this.src='https://via.placeholder.com/200x200?text=Imagem+Indisponível';">
+                    <div class="card-body">
+                        <h5 class="card-title text-light">Ultraman Z</h5>
+                        <p class="card-text text-light">Protetor galáctico em ação.</p>
+                        <a class="btn btn-primary mt-3" data-bs-toggle="modal" data-bs-target="#ultraZModal">Mais Info</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100 border-0 shadow-sm bg-secondary">
+                    <img src="/public/imgs/garoposter.png" class="card-img-top" alt="Card 4" onerror="this.onerror=null; this.src='https://via.placeholder.com/200x200?text=Imagem+Indisponível';">
+                    <div class="card-body">
+                        <h5 class="card-title text-light">Garo: The Makai Knight</h5>
+                        <p class="card-text text-light">Lutas nas trevas com armadura dourada.</p>
+                        <a class="btn btn-primary mt-3" data-bs-toggle="modal" data-bs-target="#garoModal">Mais Info</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100 border-0 shadow-sm bg-secondary">
+                    <img src="/public/imgs/wingposter.png" class="card-img-top" alt="Card 5" onerror="this.onerror=null; this.src='https://via.placeholder.com/200x200?text=Imagem+Indisponível';">
+                    <div class="card-body">
+                        <h5 class="card-title text-light">Wingman</h5>
+                        <p class="card-text text-light">Heróis alados em nova era.</p>
+                        <a class="btn btn-primary mt-3" data-bs-toggle="modal" data-bs-target="#wingmanModal">Mais Info</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100 border-0 shadow-sm bg-secondary">
+                    <img src="/public/imgs/godzilla.jpg" class="card-img-top" alt="Card 6" onerror="this.onerror=null; this.src='https://via.placeholder.com/200x200?text=Imagem+Indisponível';">
+                    <div class="card-body">
+                        <h5 class="card-title text-light">Godzilla</h5>
+                        <p class="card-text text-light">Rei dos monstros em batalhas épicas.</p>
+                        <a class="btn btn-primary mt-3" data-bs-toggle="modal" data-bs-target="#godzillaModal">Mais Info</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="services" class="container mt-5 text-center">
+        <h2 class="section-title text-primary">Nossos Planos</h2>
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-4">
+                <img src="/public/imgs/planoRider.png" alt="Plano Rider" class="circle-img service-img" data-bs-toggle="modal" data-bs-target="#riderModal" onerror="this.onerror=null; this.src='https://via.placeholder.com/300x300?text=Plano+Rider';">
+                <p class="fw-bold text-light">Plano Rider</p>
+            </div>
+            <div class="col-12 col-md-4">
+                <img src="/public/imgs/planoTeam.png" alt="Plano Team" class="circle-img service-img" data-bs-toggle="modal" data-bs-target="#teamModal" onerror="this.onerror=null; this.src='https://via.placeholder.com/300x300?text=Plano+Team';">
+                <p class="fw-bold text-light">Plano Team</p>
+            </div>
+            <div class="col-12 col-md-4">
+                <img src="/public/imgs/planoUltra.png" alt="Plano Ultra" class="circle-img service-img" data-bs-toggle="modal" data-bs-target="#ultraModal" onerror="this.onerror=null; this.src='https://via.placeholder.com/300x300?text=Plano+Ultra';">
+                <p class="fw-bold text-light">Plano Ultra</p>
+            </div>
+        </div>
+    </section>
+    <div class="modal fade" id="riderModal" tabindex="-1" aria-labelledby="riderModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content bg-dark text-light">
+                <div class="modal-header bg-primary">
+                    <h5 class="modal-title" id="riderModalLabel">Plano Rider</h5>
+                    <button type="button" class="btn-close btn-close-black" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Desfrute de streaming em HD com acesso total ao universo Kamen Rider, incluindo transformações como Zero-One.</p>
+                    <p><strong>Valor:</strong> R$ 29,90/mês</p>
+                    <p><strong>Benefícios:</strong> Qualidade HD, 2 telas, sem anúncios.</p>
+                </div>
+                <div class="modal-footer bg-secondary">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Fechar</button>
+                    <a href="#subscribe" class="btn btn-primary" onclick="subscribeAndClose('riderModal')">Assinar Agora</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="teamModal" tabindex="-1" aria-labelledby="teamModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content bg-dark text-light">
+                <div class="modal-header bg-primary">
+                    <h5 class="modal-title" id="teamModalLabel">Plano Team</h5>
+                    <button type="button" class="btn-close btn-close-black" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Acesse Super Sentai em 4K, ideal para equipes, com conteúdos extras como Kyoryuger.</p>
+                    <p><strong>Valor:</strong> R$ 39,90/mês</p>
+                    <p><strong>Benefícios:</strong> Qualidade 4K, 4 telas, conteúdos bônus.</p>
+                </div>
+                <div class="modal-footer bg-secondary">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Fechar</button>
+                    <a href="#subscribe" class="btn btn-primary" onclick="subscribeAndClose('teamModal')">Assinar Agora</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="ultraModal" tabindex="-1" aria-labelledby="ultraModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content bg-dark text-light">
+                <div class="modal-header bg-primary">
+                    <h5 class="modal-title" id="ultraModalLabel">Plano Ultra</h5>
+                    <button type="button" class="btn-close btn-close-black" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Explore Ultraman Z e clássicos em 4K com acesso antecipado a episódios.</p>
+                    <p><strong>Valor:</strong> R$ 49,90/mês</p>
+                    <p><strong>Benefícios:</strong> Qualidade 4K, 6 telas, acesso antecipado.</p>
+                </div>
+                <div class="modal-footer bg-secondary">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Fechar</button>
+                    <a href="#subscribe" class="btn btn-primary" onclick="subscribeAndClose('ultraModal')">Assinar Agora</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="zeroOneModal" tabindex="-1" aria-labelledby="zeroOneModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content bg-dark text-light">
+                <div class="modal-header bg-primary">
+                    <h5 class="modal-title" id="zeroOneModalLabel">Kamen Rider Zero-One</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="/public/imgs/01poster.png" alt="Kamen Rider Zero-One" class="img-fluid mb-3" onerror="this.onerror=null; this.src='https://via.placeholder.com/400x600?text=Imagem+Indisponível';">
+                    <p>Descrição:</p>
+                    <p>Kamen Rider Zero-One é uma série que explora um futuro onde a inteligência artificial revolucionou a sociedade. Aruto Hiden, um jovem CEO, transforma-se em Zero-One para proteger os humanos das ameaças das IAs rebeldes, utilizando a tecnologia Hiden. Lançada em 2019, a série mistura ação, inovação e emoção.</p>
+                </div>
+                <div class="modal-footer bg-primary">
+                    <button type="button" class="btn btn-outline-light" data-bs-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="ultraZModal" tabindex="-1" aria-labelledby="ultraZModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content bg-dark text-light">
+                <div class="modal-header bg-primary">
+                    <h5 class="modal-title" id="ultraZModalLabel">Ultraman Z</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="/public/imgs/posterUltramanZ.png" alt="Ultraman Z" class="img-fluid mb-3" onerror="this.onerror=null; this.src='https://via.placeholder.com/400x600?text=Imagem+Indisponível';">
+                    <p>Descrição:</p>
+                    <p>Ultraman Z, lançado em 2020, apresenta Haruki Natsukawa, que se une a Ultraman Z para defender a Terra de monstros e invasores. Com uma narrativa emocionante e heranças de outros Ultramen, a série combina ação e legado intergaláctico.</p>
+                </div>
+                <div class="modal-footer bg-primary">
+                    <button type="button" class="btn btn-outline-light" data-bs-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="garoModal" tabindex="-1" aria-labelledby="garoModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content bg-dark text-light">
+                <div class="modal-header bg-primary">
+                    <h5 class="modal-title" id="garoModalLabel">Garo: The Makai Knight</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="/public/imgs/garoposter.png" alt="Garo: The Makai Knight" class="img-fluid mb-3" onerror="this.onerror=null; this.src='https://via.placeholder.com/400x600?text=Imagem+Indisponível';">
+                    <p>Descrição:</p>
+                    <p>Garo: The Makai Knight, iniciada em 2005, segue Kouga Saejima, um cavaleiro que usa a armadura dourada Garo para combater horrores demoníacos. Com um tom sombrio e batalhas épicas, é um marco no tokusatsu dark fantasy.</p>
+                </div>
+                <div class="modal-footer bg-primary">
+                    <button type="button" class="btn btn-outline-light" data-bs-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="wingmanModal" tabindex="-1" aria-labelledby="wingmanModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content bg-dark text-light">
+                <div class="modal-header bg-primary">
+                    <h5 class="modal-title" id="wingmanModalLabel">Wingman</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="/public/imgs/wingposter.png" alt="Wingman" class="img-fluid mb-3" onerror="this.onerror=null; this.src='https://via.placeholder.com/400x600?text=Imagem+Indisponível';">
+                    <p>Descrição:</p>
+                    <p>Wingman, lançado como anime e adaptado em tokusatsu, segue Kenta Hirono, um jovem que se transforma em um herói alado para proteger o mundo. Com um estilo único, mistura aventura e fantasia.</p>
+                </div>
+                <div class="modal-footer bg-primary">
+                    <button type="button" class="btn btn-outline-light" data-bs-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="godzillaModal" tabindex="-1" aria-labelledby="godzillaModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content bg-dark text-light">
+                <div class="modal-header bg-primary">
+                    <h5 class="modal-title" id="godzillaModalLabel">Godzilla</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="/public/imgs/godzilla.jpg" alt="Godzilla" class="img-fluid mb-3" onerror="this.onerror=null; this.src='https://via.placeholder.com/400x600?text=Imagem+Indisponível';">
+                    <p>Descrição:</p>
+                    <p>Godzilla, icônico desde 1954, é o rei dos monstros que enfrenta batalhas colossais contra outros kaiju. Suas histórias exploram temas de destruição e resiliência, sendo um símbolo da cultura tokusatsu.</p>
+                </div>
+                <div class="modal-footer bg-primary">
+                    <button type="button" class="btn btn-outline-light" data-bs-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="toast-container position-fixed top-0 end-0 p-3" id="toastContainer">
+        <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+            <div class="toast-header bg-primary text-white">
+                <strong class="me-auto">TokuPlus</strong>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="toast" aria-label="Close"></button>
+            </div>
+            <div class="toast-body text-dark">
+                Assinatura realizada com sucesso! Aproveite seus tokusatsu favoritos!
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-dark text-white py-4 mt-5">
+        <div class="container">
+            <div class="row justify-content-between align-items-center">
+                <div class="text col-12 col-md-6">
+                    <h2 class="h4">Contato e Informações</h2>
+                    <p>© 2025 TokuPlus. Todos os direitos reservados. Entre em contato: <a href="mailto:suporte@tokuplus.com" class="text-info">suporte@tokuplus.com</a> | Siga-nos nas redes sociais!</p>
+                </div>
+                <div class="col-12 col-md-4">
+                    <img src="/public/imgs/logo.png" alt="logo toku+ footer" class="footer-img" onerror="this.onerror=null; this.src='https://via.placeholder.com/150x100?text=Logo+Indisponível';">
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script>
+        function subscribeAndClose(modalId) {
+            var modal = bootstrap.Modal.getInstance(document.getElementById(modalId));
+            if (modal) {
+                modal.hide();
+            }
+            var toastEl = document.getElementById('liveToast');
+            var toast = new bootstrap.Toast(toastEl);
+            toast.show();
+        }
+    </script>
+</body>
+</html>
